@@ -34,7 +34,7 @@ const Projects = () => {
     <section
       className="text-center"
       style={{
-        backgroundColor:'#fff',
+        backgroundColor: '#fff', // Set background color to white
         color: '#333',
         padding: '2rem',
       }}
@@ -51,13 +51,15 @@ const Projects = () => {
           <div
             key={project.id}
             style={{
-              backgroundColor: '#fff',
+              backgroundColor: '#fff', // White background for each card
               border: '1px solid #333',
               borderRadius: '8px',
               padding: '1rem',
-              width: '250px',
+              width: '250px', // Smaller card width
               boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              cursor: 'pointer',
             }}
+            onClick={() => toggleDescription(project.id)}
           >
             <h4 className="fw-bold">{project.title}</h4>
             {activeProject === project.id && (
