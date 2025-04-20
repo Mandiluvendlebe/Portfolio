@@ -1,30 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase"; // Adjust the path if needed
 
 const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      title: 'Project One',
-      description: 'This is a description of project one. It showcases my skills in React and Node.js.',
-    },
-    {
-      id: 2,
-      title: 'Project Two',
-      description: 'This is a description of project two. It highlights my experience with SQL and .NET.',
-    },
-    {
-      id: 3,
-      title: 'Project Three',
-      description: 'This is a description of project three. It demonstrates my expertise in RESTful APIs.',
-    },
-    {
-      id: 4,
-      title: 'Project Four',
-      description: 'This is a description of project four. It focuses on my work with Python and MongoDB.',
-    },
-  ];
-
+  const [projects, setProjects] = useState([]);
   const [activeProject, setActiveProject] = useState(null);
+
+  // Fetch projects from Firestore
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, "projects"));
+        const projectsData = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setProjects(projectsData);
+      } catch (error) {
+        console.error("Error fetching projects: ", error);
+      }
+    };
+    console.log("Firestore DB Instance:", db);
+    fetchProjects();
+  }, []);
 
   const toggleDescription = (id) => {
     setActiveProject(activeProject === id ? null : id);
@@ -63,7 +61,7 @@ const Projects = () => {
           >
             <h4 className="fw-bold">{project.title}</h4>
             {activeProject === project.id && (
-              <p style={{ marginTop: '1rem' }}>{project.description}</p>
+              <p style={{ marginTop: '1rem' }}>{project.Description}</p>
             )}
           </div>
         ))}
