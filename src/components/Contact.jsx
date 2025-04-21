@@ -7,7 +7,7 @@ const Contact = () => {
       id="contact"
       className="text-center"
       style={{
-        backgroundColor: '#ffe4ec',
+        backgroundColor: '#fff', // White background for the section
         color: '#333',
         padding: '2rem',
       }}
@@ -27,7 +27,7 @@ const Contact = () => {
         {/* Location */}
         <div
           style={{
-            backgroundColor: '#fff',
+            backgroundColor: '#ffe4ec', // Theme color for the card background
             border: '1px solid #333',
             borderRadius: '8px',
             padding: '1rem',
@@ -39,15 +39,13 @@ const Contact = () => {
           }}
         >
           <FaMapMarkerAlt style={{ color: '#333', fontSize: '1.5rem' }} />
-          <p style={{ margin: 0 }}>
-            Johannesburg, Gauteng, South Africa
-          </p>
+          <p style={{ margin: 0 }}>Johannesburg, Gauteng, South Africa</p>
         </div>
 
         {/* LinkedIn */}
         <div
           style={{
-            backgroundColor: '#fff',
+            backgroundColor: '#ffe4ec', // Theme color for the card background
             border: '1px solid #333',
             borderRadius: '8px',
             padding: '1rem',
@@ -72,7 +70,7 @@ const Contact = () => {
         {/* Mobile */}
         <div
           style={{
-            backgroundColor: '#fff',
+            backgroundColor: '#ffe4ec', // Theme color for the card background
             border: '1px solid #333',
             borderRadius: '8px',
             padding: '1rem',
@@ -95,7 +93,7 @@ const Contact = () => {
         {/* WhatsApp */}
         <div
           style={{
-            backgroundColor: '#fff',
+            backgroundColor: '#ffe4ec', // Theme color for the card background
             border: '1px solid #333',
             borderRadius: '8px',
             padding: '1rem',
@@ -120,7 +118,7 @@ const Contact = () => {
         {/* Email */}
         <div
           style={{
-            backgroundColor: '#fff',
+            backgroundColor: '#ffe4ec', // Theme color for the card background
             border: '1px solid #333',
             borderRadius: '8px',
             padding: '1rem',

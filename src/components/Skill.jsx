@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Skills = () => {
+const Skill = () => {
   const skills = [
     { name: 'JavaScript & React', level: 90 },
     { name: 'HTML, CSS & Bootstrap', level: 85 },
@@ -9,12 +9,13 @@ const Skills = () => {
     { name: 'SQL', level: 70 },
     { name: 'RESTful APIs', level: 85 },
     { name: 'GitHub', level: 90 },
-    { name: 'Azure DevOps', level: 65 },
+    //{ name: 'Azure DevOps', level: 65 },
     { name: 'Visual Studio & VS Code', level: 95 },
   ];
 
   return (
     <section
+      id = "skill"
       className="text-center"
       style={{
         backgroundColor: '#ffe4ec', // Keep the original background color
@@ -70,4 +71,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Skill;

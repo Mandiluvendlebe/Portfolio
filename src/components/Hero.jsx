@@ -32,8 +32,8 @@ const Hero = () => {
         <div style={{ flex: 1, padding: '1rem' }}>
           <h1 className="display-4 fw-bold">Hi, I'm Mandiluve Ndlebe</h1>
           <p className="lead">Junior Software Developer | React • C# • SQL • .NET</p>
-          <a href="#projects" className="btn btn-dark mt-3">
-            View My Work
+          <a href="#product" className="btn btn-dark mt-3">
+            View Offered Products
           </a>
         </div>
 

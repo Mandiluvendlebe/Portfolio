@@ -1,24 +1,55 @@
-import React from 'react';
+import React from "react";
 
 const About = () => {
+  const images = [
+    "/creative-thinker.png", // Replace with the actual path to your image
+    "/commercial-initiator.png", // Replace with the actual path to your image
+    "/influential-networker.png", // Replace with the actual path to your image
+  ];
+
   return (
     <section
       id="about"
-      className="d-flex align-items-center justify-content-center text-center"
+      className="text-center"
       style={{
-        backgroundColor: '#fff', // Set background to white
-        color: '#333', // Use theme color for text
-        padding: '2rem 0.5rem', // Adjust padding for better spacing
-        minHeight: '60vh', // Reduce height to remove excessive blank space
+        backgroundColor: "#fff", // White background for the section
+        color: "#333",
+        padding: "2rem",
       }}
     >
-      <div style={{ maxWidth: '800px' }}>
-        <h2 className="fw-bold">About Me</h2>
-        <p className="lead" style={{ marginTop: '1rem' }}>
-          Hi, I'm Mandiluve Ndlebe, a passionate Junior Software Developer with experience in React, C#, SQL, and .NET. 
-          I enjoy building user-friendly applications and solving complex problems through code. 
-          My goal is to continuously learn and grow in the tech industry while contributing to impactful projects.
-        </p>
+      <h2 className="fw-bold">About Me</h2>
+      <p className="lead" style={{ marginBottom: "2rem" }}>
+        I am a passionate developer with a knack for creating innovative solutions and delivering exceptional results.
+      </p>
+      <div
+        className="d-flex flex-wrap justify-content-center"
+        style={{ gap: "2rem", maxWidth: "1200px", margin: "0 auto" }}
+      >
+        {images.map((image, index) => (
+          <div
+            key={index}
+            style={{
+              backgroundColor: "#ffe4ec", // Background color for each card
+              border: "1px solid #ddd",
+              borderRadius: "8px",
+              padding: "1rem",
+              width: "300px", // Card width
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+              textAlign: "center",
+            }}
+          >
+            <img
+              src={image}
+              alt={`About Image ${index + 1}`}
+              style={{
+                width: "100%",
+                height: "200px",
+                objectFit: "cover",
+                borderRadius: "8px",
+              }}
+            />
+          </div>
+        ))}
       </div>
     </section>
   );

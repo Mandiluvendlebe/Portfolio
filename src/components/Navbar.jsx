@@ -12,16 +12,20 @@ const Navbar = () => {
         position: 'relative',
       }}
     >
-      <a href="#about" style={{ textDecoration: 'none', color: '#333', margin: '0 1rem' }}>
+      {/* <a href="#about" style={{ textDecoration: 'none', color: '#333', margin: '0 1rem' }}>
         About
-      </a>
-      <span>|</span>
-      <a href="#projects" style={{ textDecoration: 'none', color: '#333', margin: '0 1rem' }}>
-        Projects
-      </a>
-      <span>|</span>
-      <a href="#skills" style={{ textDecoration: 'none', color: '#333', margin: '0 1rem' }}>
+      </a> */}
+      {/* <span>|</span> */}
+      <a href="#skill" style={{ textDecoration: 'none', color: '#333', margin: '0 1rem' }}>
         Skills
+      </a>
+      <span>|</span>
+      <a href="#product" style={{ textDecoration: 'none', color: '#333', margin: '0 1rem' }}>
+        Products
+      </a>
+      <span>|</span>
+      <a href="#pricing" style={{ textDecoration: 'none', color: '#333', margin: '0 1rem' }}>
+        Packages
       </a>
       <span>|</span>
       <a href="#contact" style={{ textDecoration: 'none', color: '#333', margin: '0 1rem' }}>

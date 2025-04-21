@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Skill from "./components/Skill";
+import Product from "./components/Product";
 import Contact from "./components/Contact";
+import PricingSection from "./components/PricingSection";
+import Footer from "./components/Footer"; // Import the Footer
 import AdminPanel from "./components/AdminPanel"; // Import the Admin Panel
 
 function App() {
@@ -20,9 +22,11 @@ function App() {
               <Navbar />
               <Hero />
               <About />
-              <Skills />
-              <Projects />
+              <Skill />
+              <Product />
+              <PricingSection />
               <Contact />
+              <Footer />
             </div>
           }
         />
