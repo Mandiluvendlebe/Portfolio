@@ -19,7 +19,7 @@ const About = () => {
     >
       <h2 className="fw-bold">About Me</h2>
       <p className="lead" style={{ marginBottom: "2rem" }}>
-        I am a passionate developer with a knack for creating innovative solutions and delivering exceptional results.
+        I am a passionate developer with a knack for creating innovative solutions and delivering exceptional results. I am a versatile Junior Software Developer specializing in creating websites, web applications, mobile applications, and systems for various sectors. Skilled in Python, JavaScript, C , React, and ASP.NET, I develop scalable and efficient digital solutions. Passionate about problem-solving and continuous learning, I thrive in collaborative environments, delivering high-quality, user-focused software. 
       </p>
       <div
         className="d-flex flex-wrap justify-content-center"

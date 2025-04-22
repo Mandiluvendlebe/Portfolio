@@ -14,7 +14,7 @@ const Footer = () => {
         © {new Date().getFullYear()} Mandiluve Ndlebe. All rights reserved.
       </p>
       <p style={{ margin: 0 }}>
-        Built with ❤️ by <a href="https://github.com/mandiluve" style={{ color: "#007bff", textDecoration: "none" }}>Mandiluve Ndlebe</a>
+        Built with ❤️ by <a href="https://github.com/Mandiluvendlebe" style={{ color: "#007bff", textDecoration: "none" }}>Mandiluve Ndlebe</a>
       </p>
     </footer>
   );
