@@ -94,6 +94,7 @@ const PricingSection = () => {
             >
             {pkg.name}
             </h3>
+            
             <p className="text-gray-500 mb-4">{pkg.subtitle}</p>
             <div
               style={{
